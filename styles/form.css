@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4C1242;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 1rem 0;
+    color: #FFC0CB;
+}
+
+main {
+    background-color: #D9C3D3;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4C1242;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFC0CB;
+    color: black;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+fieldset legend {
+    margin-bottom: 0.5rem;
+}
+
+fieldset label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+fieldset input {
+    margin-right: 5px; 
+}
+
+fieldset {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

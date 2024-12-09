@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+            </select>
+            
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" required>
+                    ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2" required>
+                    ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3" required>
+                    ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4" required>
+                    ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5" required>
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+            
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+            
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label>
+                    <input type="checkbox" name="features" value="Durability">
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Ease of Use">
+                    Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Performance">
+                    Performance
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Design">
+                    Design
+                </label>
+            </fieldset>
+            
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+            
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©2024 🌸 Ojukwu Obinna 🌸 Nigeria </p>
+        <p>Last Modification: 02/26/2024 13:56:10</p>
+    </footer>
+</body>
+</html>
